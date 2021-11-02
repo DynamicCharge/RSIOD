@@ -310,6 +310,8 @@ body {
 .panel__item__list {
     list-style-type: disc !important;
     display: block;
+    position: relative;
+    left: 15px;
 
     opacity: 0;
     max-height: 0;
@@ -443,4 +445,160 @@ body {
 }
 .customers__list__item:nth-child(n+6) {
     border-bottom: none;
+}
+
+.advantages {
+    background-color: #4A1A2C;
+}
+.advantages .container {
+    padding: 100px 0;
+}
+.advantages__header {
+    margin-bottom: 40px;
+}
+.advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.advantages__item {
+    max-width: 370px;
+}
+.advantages__item__icon {
+    display: block;
+    margin-bottom: 15px;
+}
+.advantages__item__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.item__list__line {
+    height: 2px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 14px;
+}
+.advantages__item__list {
+    list-style-type: disc;
+    position: relative;
+    left: 15px;
+}
+.advantages__item__list__item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.feedbacks {
+
+}
+.feedbacks .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 150px 0;
+    border-bottom: 1px solid rgba(120, 42, 72, 0.4);
+}
+.feedbacks__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.slider__controlls {
+
+}
+.slider__controll:first-child {
+    margin-right: 15px;
+}
+.slider {
+
+}
+.slider__item {
+    max-width: 870px;
+    display: none;
+}
+.slider__item.current {
+    display: block;
+}
+.slider__item__header {
+    font-family: CenturyGothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 122%;
+
+    color: #4A1A2C;
+    position: relative;
+    margin-bottom: 35px;
+}
+.slider__item__header::before {
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 37px;
+    background-image: url('../img/quotation.svg');
+    position: absolute;
+    left: -60px;
+    top: 10px;
+}
+.slider__item__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.slider__item__img__container {
+    width: max-content;
+    height: 166px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.slider__item__img {
+    object-fit: contain;
+}
+.slider__item__img__icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.slider__item__wrapper> .slider__item__wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+}
+.slider__item__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #393939;
+    margin-bottom: 27px;
+}
+.slider__item__author {
+    border-top: 1px solid #782A48;
+    padding-top: 5px;
+    max-width: 242px;
+}
+.author__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+}
+.author__company {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: right;
+
+    color: #393939;
 }
