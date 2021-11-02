@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <script src="assets/scripts/jQuery.js"></script>
+    <script src="assets/scripts/jQueryMarquee.js"></script>
     <title>RSIOD</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
                     </ul>
                 </div>
     
-                <a href="" class="logo"><img src="assets/img/logo.svg" alt="Logo"></a>
+                <a href="#" class="logo"><img src="assets/img/logo.svg" alt="Logo"></a>
     
-                <div class="nav__wrapper">
+                <div class="nav__wrapper" id="top">
                     <ul class="nav__list">
                         <li class="nav__list__item"><a href="#" class="nav__link">Компетенция</a></li>
                         <li class="nav__list__item"><a href="#" class="nav__link">Контакты</a></li>
@@ -425,10 +426,89 @@
                 </div>
             </div>
         </secion>
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__header page__header accent">Контакты</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__wrapper__container">
+
+                        <div class="contacts__wrapper__container__item">
+                            <h4 class="contacts__wrapper__container__item__header">Центральный офис</h4>
+                            <a href="" class="contacts__wrapper__container__item__main phone">8 800 550-88-57</a>
+                        </div>
+
+                        <div class="contacts__wrapper__container__item">
+                            <h4 class="contacts__wrapper__container__item__header">Написать письмо</h4>
+                            <a href="" class="contacts__wrapper__container__item__main phone">info@rsiod.ru</a>
+                        </div>
+
+                        <div class="contacts__wrapper__container__item">
+                            <h4 class="contacts__wrapper__container__item__header">Адрес</h4>
+                            <a href="" class="contacts__wrapper__container__item__main phone">119002, Санкт-Петербург, Загородный пр., дом 5</a>
+                        </div>
+
+                    </div>
+
+                    <form action="" class="contacts__wrapper__form">
+                        <h3 class="contacts__wrapper__form__header">Заказать обратный звонок</h3>
+                        <label class="contacts__wrapper__form__label name">
+                            ФИО
+                            <input type="text" class="contacts__wrapper__form__input" value="Константин Константинович Константинопольский">
+                        </label>
+                        <label class="contacts__wrapper__form__label phone">
+                            Телефон
+                            <input type="text" class="contacts__wrapper__form__input" value="+ 7 999 222-77-88">
+                        </label>
+
+                        <div class="contacts__wrapper__form__wrapper">
+                            <label class="personal-data">
+                                <input class="personal-data__check" type="checkbox">
+                                Я принимаю условия по обработке персональных данных
+                            </label>
+                            <button type="submit" class="submit">Заказать звонок</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="marquee" style='overflow:hidden'>
+                - Начать проект - Начать проект - Начать проект - Начать проект
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a class="to-top"><img src="assets/img/btn-up.png" alt=""></a>
+            <div class="container">
+                <div class="footer__wrapper">
+                    <h3 class="company__name footer__header">RSIOD</h3>
+                    <ul class="footer__wrapper__list">
+                        <li class="footer__wrapper__list__item"><a href="" class="footer__wrapper__list__item__link">О нас</a></li>
+                        <li class="footer__wrapper__list__item"><a href="" class="footer__wrapper__list__item__link">Услуги</a></li>
+                        <li class="footer__wrapper__list__item"><a href="" class="footer__wrapper__list__item__link">Этапы работ</a></li>
+                        <li class="footer__wrapper__list__item"><a href="" class="footer__wrapper__list__item__link">Компетенции</a></li>
+                        <li class="footer__wrapper__list__item"><a href="" class="footer__wrapper__list__item__link">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper">
+                    <h3 class="footer__header">Контакты</h3>
+                    <ul class="footer__wrapper__list">
+                        <li class="footer__wrapper__list__item"><a href=":tel" class="footer__wrapper__list__item__link">8 800 550-88-57</a></li>
+                        <li class="footer__wrapper__list__item">info@rsiod.ru<br>services.rsiod.ru</li>
+                        <li class="footer__wrapper__list__item">119002, Санкт-Петербург, Загородный пр. 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper__last">
+                <span class="site-author footer__text">Дизайн и разработка — РА-Студио</span>
+                <span class="copy footer__text">&copy; 2021 RSIOD</span>
+                <a href="" class="pdp footer__text">Обработка персональных данных</a>
+            </div>
+        </footer>
     </main>
+    <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/accordion.js"></script>
     <script src="assets/scripts/interactive-circle.js"></script>
     <script src="assets/scripts/slider.js"></script>
-
+    <script src="assets/scripts/endless-row.js"></script>
 </body>
 </html>
