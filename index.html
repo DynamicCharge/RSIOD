@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
     <script src="assets/scripts/jQuery.js"></script>
     <script src="assets/scripts/jQueryMarquee.js"></script>
     <title>RSIOD</title>
 </head>
 <body>
     <main>
-        <nav class="nav">
-
+        <nav class="nav desktop">
             <div class="container">
                 <div class="nav__wrapper">
                     <ul class="nav__list">
@@ -33,7 +33,26 @@
                     </ul>
                 </div>
             </div>
-
+        </nav>
+        
+        <nav class="nav mobile">
+            <nav class="nav__mobile__wrapper">
+                <a href="" class="logo"><img src="assets/img/logo.svg" alt=""></a>
+                <button class="menu" id="open-menu">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                </button>
+            </nav>
+            <div class="expanded-menu">
+                <button id="close-menu" class="menu__close menu"><img src="assets/img/cross2.svg" alt=""></button>
+                <a href="" class="menu__item">О нас</a>
+                <a href="" class="menu__item">Услуги</a>
+                <a href="" class="menu__item">Этапы работ</a>
+                <a href="" class="menu__item">Компетенции</a>
+                <a href="" class="menu__item">Контакты</a>
+                <a href="" class=" menu__item mobile__number">8 800 550-88-57</a>
+            </div>
         </nav>
 
         <header class="header">
@@ -45,6 +64,7 @@
                             <span class="title__span">промышленных</span>
                             <span class="title__span">предприятий</span>
                         </h1>
+                        <img src="assets/img/img-mobile.jpg" alt="" class="header__img__mobile">
                         <p class="header__desc page__desc">
                             Уже несколько лет основным приоритетом деятельности нашей компании «РСИОД» является техническое обслуживание зданий, сооружений,   инженерных сетей, их ремонт и модернизация.
                         </p>
@@ -98,7 +118,8 @@
                          других специализированных зданий.
                     </p>
                 </div>
-                <div class="about__wrapper">
+
+                <div class="about__wrapper about__wrapper__desktop">
                     <div class="about__wrapper__item">
                         <p class="about__item__header">Проектов</p>
                         <h3 class="about__item__num">>50</h3>
@@ -112,6 +133,38 @@
                         <p class="about__item__desc">
                             Обслуживание в т.ч. пищевые, офисные, складские, котельные...  
                         </p>
+                    </div>
+                    <div class="about__wrapper__item">
+                        <p class="about__item__desc">
+                            Восстановление и реконструкция объектов культурного наследия, памятников и объектов муниципальной собственности.
+                        </p>
+                        <p class="about__item__desc">
+                            Межотраслевая номинация «Достижение отрасли» по итогам 2020г. Включение в рейтинг эффективных предприятий.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__wrapper__mobile">
+                    <div class="about__slider">
+                        <div class="about__wrapper__item wrapper__item__mobile current">
+                            <p class="about__item__header">Проектов</p>
+                            <h3 class="about__item__num">>50</h3>
+                            <p class="mobile__about__item__desc">
+                                Модернизации и реконструкции технологических процессов зданий и сооружений
+                            </p>
+                        </div>
+
+                        <div class="about__wrapper__item wrapper__item__mobile">
+                            <p class="about__item__header">Направлений</p>
+                            <h3 class="about__item__num">10+</h3>
+                            <p class="mobile__about__item__desc">
+                                Обслуживание в т.ч. пищевые, офисные, складские, котельные...  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mobile__slider__controlls">
+                        <div class="controll controll__active"></div>
+                        <div class="controll"></div>
                     </div>
                     <div class="about__wrapper__item">
                         <p class="about__item__desc">
@@ -357,9 +410,9 @@
 
                 <div class="feedbacks__wrapper">
                     <h2 class="feedbacks__header page__header accent">Отзывы</h2>
-                    <div class="slider__controlls">
-                        <a href="#" class="slider__controll prev"><img src="assets/img/arrow-left.svg" alt=""></a>
-                        <a  class="slider__controll next"><img src="assets/img/arrow-right.svg" alt=""></a>
+                    <div class="slider__controlls desktop__controlls">
+                        <a class="slider__controll prev"><img src="assets/img/arrow-left.svg" alt=""></a>
+                        <a class="slider__controll next"><img src="assets/img/arrow-right.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -397,17 +450,6 @@
                     <div class="slider__item">
                         <h3 class="slider__item__header">Отлично улучшили надежность системы</h3>
                         <div class="slider__item__wrapper">
-
-                            <!-- <div class="slider__item__img__container">
-                                <img src="assets/img/gramota.jpg" alt="" class="slider__item__img">
-                                <img src="assets/img/expand.svg" alt="" class="slider__item__img__icon">
-                            </div>
-
-                            <div class="slider__item__img__container">
-                                <img src="assets/img/gramota2.jpg" alt="" class="slider__item__img">
-                                <img src="assets/img/expand.svg" alt="" class="slider__item__img__icon">
-                            </div> -->
-                            
                             <div class="slider__item__wrapper">
                                 <p class="slider__item__desc">
                                     Начали проект с другой компанией, которая нас подвела,
@@ -424,6 +466,12 @@
                     </div>
 
                 </div>
+
+                <div class="slider__controlls mobile__controlls">
+                    <a class="slider__controll prev"><img src="assets/img/arrow-left.svg" alt=""></a>
+                    <a  class="slider__controll next"><img src="assets/img/arrow-right.svg" alt=""></a>
+                </div>
+
             </div>
         </secion>
 
@@ -470,6 +518,7 @@
                         </div>
                     </form>
                 </div>
+                <a class="to-top"><img src="assets/img/btn-up.png" alt=""></a>
             </div>
             <div id="marquee" style='overflow:hidden'>
                 - Начать проект - Начать проект - Начать проект - Начать проект
@@ -477,7 +526,6 @@
         </section>
 
         <footer class="footer">
-            <a class="to-top"><img src="assets/img/btn-up.png" alt=""></a>
             <div class="container">
                 <div class="footer__wrapper">
                     <h3 class="company__name footer__header">RSIOD</h3>
@@ -498,12 +546,14 @@
                     </ul>
                 </div>
             </div>
+            <hr class="footer__mobile__line">
             <div class="footer__wrapper__last">
                 <span class="site-author footer__text">Дизайн и разработка — РА-Студио</span>
                 <span class="copy footer__text">&copy; 2021 RSIOD</span>
                 <a href="" class="pdp footer__text">Обработка персональных данных</a>
             </div>
         </footer>
+
     </main>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/accordion.js"></script>

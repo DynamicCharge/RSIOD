@@ -6,4 +6,18 @@ $(document).ready(function() {
             scrollTop: $(anchor).offset().top - 60
         }, 800);
     });
+
+    $('#open-menu').click(function() {
+        if(!$('.expanded-menu').hasClass('menu__active')){
+            $('.expanded-menu').addClass('menu__active')
+        }else{
+            $('.expanded-menu').removeClass('menu__active');
+        }
+    });
+
+    $('#close-menu').click(function() {
+        if($('.expanded-menu').hasClass('menu__active')){
+            $('.expanded-menu').removeClass('menu__active')
+        }
+    });
 });

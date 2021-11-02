@@ -1,4 +1,5 @@
 $(document).ready( function() {
+    $('#one').parents('.container').find('.one').show()
 
     $('.stages__schema__item').hover(function(){
         let id = $(this).attr('id');
