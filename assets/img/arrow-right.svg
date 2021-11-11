@@ -1,9 +1,8 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17 10L16.295 10.705L20.085 14.5L9 14.5V15.5L20.085 15.5L16.295 19.295L17 20L22 15L17 10Z" fill="#4A1A2C"/>
-<mask id="mask0_317:662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="10" width="13" height="10">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17 10L16.295 10.705L20.085 14.5L9 14.5V15.5L20.085 15.5L16.295 19.295L17 20L22 15L17 10Z" fill="white"/>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 3L9.295 3.705L13.085 7.5L2 7.5V8.5L13.085 8.5L9.295 12.295L10 13L15 8L10 3V3Z" fill="#4A1A2C"/>
+<mask id="mask0_244:107" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="3" width="13" height="10">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 3L9.295 3.705L13.085 7.5L2 7.5V8.5L13.085 8.5L9.295 12.295L10 13L15 8L10 3V3Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_317:662)">
+<g mask="url(#mask0_244:107)">
 </g>
-<circle cx="15" cy="15" r="14.5" stroke="#4A1A2C"/>
 </svg>

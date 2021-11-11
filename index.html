@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/styles/media.css">
     <script src="assets/scripts/jQuery.js"></script>
     <script src="assets/scripts/jQueryMarquee.js"></script>
+    <script src="assets/scripts/jQuery.maskedinput.min.js"></script>
     <title>RSIOD</title>
 </head>
 <body>
@@ -423,12 +424,12 @@
                         <div class="slider__item__wrapper">
 
                             <div class="slider__item__img__container">
-                                <img src="assets/img/gramota.jpg" alt="" class="slider__item__img">
+                                <img src="assets/img/gramota.jpg" alt="" class="slider__item__img minimized">
                                 <img src="assets/img/expand.svg" alt="" class="slider__item__img__icon">
                             </div>
 
                             <div class="slider__item__img__container">
-                                <img src="assets/img/gramota2.jpg" alt="" class="slider__item__img">
+                                <img src="assets/img/gramota2.jpg" alt="" class="slider__item__img minimized">
                                 <img src="assets/img/expand.svg" alt="" class="slider__item__img__icon">
                             </div>
                             
@@ -488,7 +489,7 @@
 
                         <div class="contacts__wrapper__container__item">
                             <h4 class="contacts__wrapper__container__item__header">Написать письмо</h4>
-                            <a href="" class="contacts__wrapper__container__item__main phone">info@rsiod.ru</a>
+                            <a href="mailto:mail@example.com" class="contacts__wrapper__container__item__main phone">info@rsiod.ru</a>
                         </div>
 
                         <div class="contacts__wrapper__container__item">
@@ -502,11 +503,11 @@
                         <h3 class="contacts__wrapper__form__header">Заказать обратный звонок</h3>
                         <label class="contacts__wrapper__form__label name">
                             ФИО
-                            <input type="text" class="contacts__wrapper__form__input" value="Константин Константинович Константинопольский">
+                            <input type="text" class="contacts__wrapper__form__input fio" value="Константин Константинович Константинопольский">
                         </label>
                         <label class="contacts__wrapper__form__label phone">
                             Телефон
-                            <input type="text" class="contacts__wrapper__form__input" value="+ 7 999 222-77-88">
+                            <input type="text" id="phone" class="contacts__wrapper__form__input" value="+ 7 999 222-77-88">
                         </label>
 
                         <div class="contacts__wrapper__form__wrapper">
@@ -560,5 +561,7 @@
     <script src="assets/scripts/interactive-circle.js"></script>
     <script src="assets/scripts/slider.js"></script>
     <script src="assets/scripts/endless-row.js"></script>
+    <script src="assets/scripts/maskedInput.js"></script>
+    <script src="assets/scripts/popup.js"></script>
 </body>
 </html>
